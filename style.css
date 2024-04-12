@@ -1,0 +1,169 @@
+
+/* ======body===== */
+body {
+    margin: 0;
+}
+
+/* background-image */
+
+.background-container {
+    background-image: url(./shapes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 62px;
+}
+
+/* navigation bar 1 */
+.nav {
+    display: flex;
+    justify-content: space-between; /* Align items at both ends of the flex container */
+    align-items: center;
+    padding: 10px; /* Optional: Add padding for spacing */
+    border-bottom: solid #333 1px;
+}
+
+/* logo */
+.logo {
+    font-size: 30px;
+    margin-left: 90px;
+    color: #333; 
+}
+
+/* navigation bar 1 with text */
+.nav-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-right: 120px;
+}
+
+/* making changes on links */
+a {
+
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    font-weight: 300; 
+    font-size: 15px; 
+    letter-spacing: 0.5px;
+    line-height: 1.4; 
+    color: #333; 
+}
+
+/* round shape around get webify today  */
+.round-shape{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 20px; /* Adjust this value to control the curvature */
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* main body */
+
+.main-font {
+    margin: 200px 10px 100px 100px;
+}
+
+/* child 1 */
+
+.font-1 {
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    font-weight: 300; 
+    font-size: 16px; 
+    letter-spacing: 0.5px;
+    line-height: 1.4; 
+    color: #333; 
+}
+/* child 2 */
+.font-2 {
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    font-weight: 300; 
+    font-size: 50px; 
+    letter-spacing: 0.5px;
+    line-height: 1.4; 
+    color: #333; 
+}
+
+/* navigation bar 2 */
+
+.nav-2 {
+    display: flex;
+    justify-content: space-between; /* Align items at both ends of the flex container */
+    align-items: center;
+    padding: 10px; /* Optional: Add padding for spacing */
+}
+
+/* navigation bar 2 with text */
+.nav-list-2 {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-left: 106px;
+}
+
+
+/* round shape around All  */
+.round-shape-2{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 20px; /* Adjust this value to control the curvature */
+    background-color: #fff;
+    font-size: 15px;
+    color: #333;
+}
+
+
+/* ======grid of pictures===== */
+.containers {
+   display: grid;
+   gap: 5px;
+   grid-auto-columns: 1fr;
+   grid-template-areas:
+   'one'
+   'two'
+   'three'
+   'four'
+   'five'
+   'six';
+
+
+    margin: 10px 100px 10px 100px;
+}
+
+.container:nth-child(1) {
+    grid-area: one;
+}
+
+.container:nth-child(2) {
+    grid-area: two;
+}
+
+.container:nth-child(3) {
+    grid-area: three;
+}
+
+.container:nth-child(4) {
+    grid-area: four;
+}
+
+.container:nth-child(5) {
+    grid-area: five;
+}
+
+.container:nth-child(6) {
+    grid-area: six;
+}
+
+@media (min-width: 10px) {
+    .containers {
+        grid-template-areas:
+        'one two three'
+        'four two six'
+        'four five six';
+    }
+}
